@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Kasir Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Kasir Sederhana</h1>
+        
+        <div class="input-section">
+            <input type="text" id="namaBarang" placeholder="Nama Barang">
+            <input type="number" id="hargaBarang" placeholder="Harga Barang">
+            <button onclick="tambahBarang()">Tambahkan Barang</button>
+        </div>
+
+        <div class="cart-section">
+            <h2>Keranjang Belanja</h2>
+            <ul id="keranjangBelanja"></ul>
+        </div>
+
+        <div class="total-section">
+            <button onclick="hitungTotal()">Hitung Total</button>
+            <p id="totalHarga">Total: Rp0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
